@@ -6,6 +6,8 @@ UDP proxy for Minecraft Bedrock Edition. Forwards traffic from your local networ
 
 May pop positive for some antivirus due to this establishing a UDP proxy, which is a similar behavior to some reverse shells.
 
+![BedrockWormhole Demo](/demo.png)
+
 ## How Does It Work?
 
 This is a transparent UDP proxy, using the computer you run it on to pose as the host of a Minecraft Bedrock server, when in fact it's just forwarding all traffic to the remote host. You can run the same thing yourself with something like `socat UDP4-LISTEN:19132,fork UDP4-SENDTO:example.com:19132`.
